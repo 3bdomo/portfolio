@@ -13,7 +13,7 @@ export class App {
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/abdulrahman-mohamed-abdulatif/'
+      url: 'https://www.linkedin.com/in/abdomo124/'
     }
   ];
 

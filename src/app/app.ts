@@ -29,19 +29,22 @@ export class App {
     'Linux Basics',
     'Java',
     'C++',
-    'Network Security'
+    'Network Security',
+    'Docker'
   ];
 
   protected readonly projects = [
     {
       name: 'Varnda',
       type: 'Real Estate Platform',
-      description: 'Developed a property listing platform with dashboard access for admins, SEOs, and writers, plus a fast advertisement flow for users to publish property ads.'
+      description: 'Developed a property listing platform with dashboard access for admins, SEOs, and writers, plus a fast advertisement flow for users to publish property ads.',
+      link: 'https://varnda.com/'
     },
     {
       name: 'Readx',
       type: 'Library Management System',
-      description: 'Built a library system with admin and user sections covering books, graduation projects, research, and exams for library users and administrators.'
+      description: 'Built a library system with admin and user sections covering books, graduation projects, research, and exams for library users and administrators.',
+      link: 'https://github.com/3bdomo/Readx'
     },
     {
       name: 'Clinic Management System',

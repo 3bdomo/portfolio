@@ -23,11 +23,16 @@
         <a class="button primary" href="#work">View Work</a>
         <a class="button secondary" href="mailto:AbdulrahmanMo124@gmail.com">Contact Me</a>
       </div>
+      <div class="social-links" aria-label="Social accounts">
+        @for (link of socialLinks; track link.name) {
+          <a [href]="link.url" target="_blank" rel="noopener">{{ link.name }}</a>
+        }
+      </div>
     </div>
 
     <aside class="profile-panel" aria-label="Profile summary">
       <div class="photo-frame">
-        <img src="/personalPhoto@icpc.jpg" alt="Abdulrahman Mohamed Abdulatif" />
+        <img src="personalPhoto@icpc.jpg" alt="Abdulrahman Mohamed Abdulatif" />
         <span aria-hidden="true">AM</span>
       </div>
       <p class="panel-title">Cairo, Egypt</p>
@@ -108,6 +113,11 @@
       <h2 class="contact-heading mb-5">Have a back-end or .NET project in mind?</h2>
       <p id="contact-info" class="contact-info mt-8">Cairo, Egypt | +201118936185</p>
     </div>
-    <a class="button primary" href="mailto:AbdulrahmanMo124@gmail.com">AbdulrahmanMo124@gmail.com</a>
+    <div class="contact-actions">
+      <a class="button primary" href="mailto:AbdulrahmanMo124@gmail.com">AbdulrahmanMo124@gmail.com</a>
+      @for (link of socialLinks; track link.name) {
+        <a class="button secondary" [href]="link.url" target="_blank" rel="noopener">{{ link.name }}</a>
+      }
+    </div>
   </section>
 </main>

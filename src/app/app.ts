@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
+  protected readonly socialLinks = [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/3bdomo'
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/abdulrahman-mohamed-abdulatif/'
+    }
+  ];
+
   protected readonly skills = [
     'C#',
     '.NET',
